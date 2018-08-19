@@ -1,0 +1,13 @@
+version: "3.0"
+
+services:
+  nginx:
+    image: senasi/nginx:next
+    expose: 80
+  php:
+    image: senasi/php:7.2
+    expose: 9000
+
+networks:
+  backend:
+

@@ -1,0 +1,27 @@
+{
+    "name": "senasi/php-skeleton",
+    "description": "Skeleton for new projects based on Slim framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vlado Senasi"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3",
+        "psr/log": "^1.0",
+        "monolog/monolog": "^1.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php mkdir('temp', 0777)",
+            "@php mkdir('log', 0777)"
+        ]
+    }
+}

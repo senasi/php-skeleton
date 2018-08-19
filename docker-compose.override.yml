@@ -1,0 +1,7 @@
+version: "3.0"
+
+services:
+  php:
+    image: senasi/php:7.2-devel
+    volume: $PWD:/data
+
